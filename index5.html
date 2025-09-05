@@ -1,22 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<style>
-    .shadow{     box-shadow: 20px 10px 20px 14px #788773;
-    outline: 3px solid blue;
-    border: 3px solid red;
-    border-radius: 20px;
-    outline-offset: 31px;}
-    .textshadow{text-shadow: 5px 5px 5px #ff2929;}
-</style>
-<body>
-    <!-- css shadows -->
-    <div class="shadow"><h1>My name is Moiz</h1>
-        </div>
-        <p class="textshadow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, explicabo sint iusto dolorem, nam veritatis veniam rem, maxime placeat qui impedit quaerat! Sequi voluptatum iusto, facilis esse quia exercitationem iure possimus veritatis doloremque quas fuga reiciendis delectus dolor cum ratione?</p>
-</body>
+  </head>
+  <style>
+    body {
+      background-color: aqua;
+    }
+    @media only screen and (max-width: 400px) {
+      body {
+        background-color: blue;
+      }
+      .boxes {
+        flex-direction: column;
+        width: 200px;
+        height: 250px;
+      }
+    }
+    .box {
+      background-color: red;
+      width: 344px;
+      height: 344px;
+      margin: 10px;
+      padding: 3px;
+    }
+
+    .boxes {
+      display: flex;
+      /* flex-direction: column; */
+    }
+  </style>
+  <body>
+    <div class="p">
+      <p>I am a moiz</p>
+    </div>
+    <div class="boxes">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
 </html>

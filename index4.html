@@ -3,42 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Css variables</title>
   </head>
+
   <style>
+    body {
+      background-color: rgb(153, 129, 175);
+    }
+    @media only screen and (max-width: 400px) {
+      body {
+        background-color: rgb(0, 0, 255);
+      }
+    }
+
+    :root {
+      --color: red;
+      --seccolor: rgb(254, 213, 7);
+    }
     * {
       margin: 0;
       padding: 0;
     }
-    .box1 {
-      color: rgb(199, 29, 108);
-      background-color: rgb(239, 212, 42);
-      border: 3px solid rgb(47, 255, 0);
-      /* display:  flex ;
-        justify-content: center; */
-      /* display: inline-flex; */
-      /* display: grid; */
-
-      /* visibility: hidden; */
-      padding: 45px;
-      margin: 40px;
-      width: 322px;
+    ul {
+      background-color: var(--color);
+      display: flex;
+      padding: 10px;
     }
-    .box {
-      color: rgb(7, 27, 248);
-      background-color: rgb(239, 212, 42);
-      border: 3px solid rgb(16, 17, 16);
-      display: inline-block;
-      /* visibility: hidden; */
-      padding: 45px;
-      margin: 40px;
-      width: 322px;
+
+    ul li {
+      list-style: none;
+      margin: 10px;
+      padding: 10px;
+    }
+    .container {
+      /* background-color: blueviolet; */
+      background-color: var(--seccolor);
+      /* margin-top: 50px; */
+    }
+    .container p {
+      /* opacity: 0.4; */
+      padding: 10px 25px;
     }
   </style>
   <body>
-    <div class="box1">i am a box1 first</div>
-    <div class="box">i am another box</div>
-    <span>My name is</span>
-    <span>moiz</span>
+    <div class="nav">
+      <ul>
+        <li>Home</li>
+        <li>Obout</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias
+        saepe et optio! Tenetur neque quae repudiandae dolorem commodi esse
+        ducimus, explicabo illo omnis non dolor odit provident similique
+        praesentium maxime quo odio tempore ipsum temporibus quasi ut! Ad
+        doloribus suscipit culpa voluptas itaque autem earum?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere tenetur
+        temporibus at quisquam inventore explicabo vitae, porro ad ea, ut nemo
+        sed consequuntur molestias dolor quibusdam, numquam incidunt recusandae
+        velit nulla illo ex nesciunt maiores.
+      </p>
+    </div>
   </body>
 </html>

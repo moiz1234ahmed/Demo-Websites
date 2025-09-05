@@ -6,42 +6,67 @@
     <title>Document</title>
   </head>
   <style>
-    p {
-      color: red;
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .box {
+      height: 430px;
+      width: 80vw;
+      border: 2px solid black;
+      padding: 3px;
+      margin: 5px;
+    }
+    .box1 {
+      background-color: red;
+      position: absolute;
+      top: 0px;
+      left: 40px;
+      /* position: sticky; */
+      /* top: 0px;  */
+      position: fixed;
+      top: 0px;
+    }
+    .box2 {
+      background-color: blue;
+      /* position: sticky;
+      top: 0px; */
+      /* position: relative;
+        top: 15px;
+       left: 30px; */
+      /* position: absolute;
+       top: 0px;
+       left: 10px; */
+    }
+    .box3 {
+      background-color: green;
+      /* position: fixed;
+       bottom: 0px;
+      left: 8vw; */
+      /* height: 348px; */
+      /* overflow: scroll; */
+    }
+    .box4 {
       background-color: yellow;
     }
-    div p:first-child {
-      color: blue;
-      background-color: rgb(205, 201, 201);
-      border: 3px solid red;
-      height: 60vh;
-      width: 75vw;
-      text-align: center;
-      display: flex;
+    .parent {
+      border: 3px solid rgb(245, 5, 5);
+      margin: 34px;
+      padding: 34px;
+      /* transform filter and perspective properties can also make
+        make an element as positioned */
+
+      position: relative;
+      /* transform: translate(0); */
+      /* filter: invert(); */
     }
   </style>
   <body>
-    <div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi unde
-        dolor quo libero quisquam. Quas, aperiam. Totam, nobis, distinctio
-        tenetur illum aliquid tempora minus quibusdam cupiditate ullam eos iusto
-        dolorum id voluptate voluptatem possimus, veritatis unde omnis animi at.
-        Ipsam.
-      </p>
-      <p>this is my tablet</p>
-      <p>this is my desktop</p>
-    </div>
-    <div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, provident
-        quasi ad maiores reprehenderit corrupti deserunt enim dolorum hic
-        suscipit ab? Recusandae consequuntur nobis laborum. Sint ex a
-        accusantium amet cum officia optio voluptatum aspernatur laudantium
-        alias, aut est, aliquam nemo dicta molestiae, laborum odit!
-      </p>
-      <p>this is my book</p>
-      <p>pen</p>
+    <div class="parent">
+      <div class="box box1"></div>
+      <div class="box box2"></div>
+      <div class="box box3"></div>
+      <div class="box box4"></div>
     </div>
   </body>
 </html>
