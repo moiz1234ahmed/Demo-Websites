@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    :root {
+      --color: rgb(62, 185, 230);
+    }
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background-color: #00ddfa;
+      color: rgb(0, 0, 0);
+      padding: 10px;
+      position: sticky;
+      top: 0;
+    }
+    li {
+      list-style-type: none;
+      margin-right: 30px;
+      font-weight: bold;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    }
+
+    nav ul {
+      display: flex;
+      padding: 18px;
+    }
+    .box1 {
+      width: 500px;
+      height: 500px;
+      background-color: var(--color);
+      margin: 20px 20px;
+    }
+    .box2 {
+      width: 500px;
+      height: 500px;
+      background-color: var(--color);
+      margin: 20px 70px;
+    }
+    div.boxes {
+      display: flex;
+      justify-content: center;
+    }
+    div svg {
+      float: right;
+      position: sticky;
+    }
+    .container {
+      background-color: rgb(115, 247, 247);
+      width: 100vw;
+      height: 40vh;
+    }
+    .box3 {
+      height: 30vh;
+      width: 70vw;
+      background-color: rgb(58, 167, 240);
+      margin-left: 13vw;
+      border: 2px solid black;
+      border-radius: 30px;
+      display: flex;
+      justify-content: center;
+    }
+    footer {
+      background-color: rgb(92, 195, 243);
+      color: rgb(0, 0, 0);
+      padding: 10px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 18px;
+      font-family: Arial, sans-serif;
+      margin-top: 81px;
+    }
+    .box1 img {
+      margin-top: 10px;
+      margin-left: 35px;
+    }
+    .box2 img {
+      margin-top: 10px;
+      margin-left: 35px;
+    }
+    .box1 h1 {
+      margin-left: 29px;
+    }
+    .box2 h1 {
+      margin-left: 29px;
+    }
+  </style>
+  <body>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>Obout</li>
+        <li>Contact</li>
+        <li>Services</li>
+      </ul>
+    </nav>
+    <div class="boxes">
+      <div class="box1">
+        <img src="image.jpg" alt="" height="300px" />
+        <h1>Nature</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+          dolor illo doloribus consequatur maiores itaque distinctio nostrum
+          ratione voluptate obcaecati quam dignissimos perferendis ut voluptas,
+          labore dicta consectetur incidunt laborum!
+        </p>
+      </div>
+      <div class="box2">
+        <img
+          src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=1752&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+          height="300px"
+        />
+        <h1>Mountains</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+          dolor illo doloribus consequatur maiores itaque distinctio nostrum
+          ratione voluptate obcaecati quam dignissimos perferendis ut voluptas,
+          labore dicta consectetur incidunt laborum!
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="box3">
+        <h1>Welcome To Moiz Website</h1>
+      </div>
+    </div>
+
+    <div>
+      <svg height="100" width="100">
+        <circle
+          cx="40"
+          cy="40"
+          r="40"
+          stroke="black"
+          stroke-width="3"
+          fill="blue"
+        />
+      </svg>
+    </div>
+    <footer>
+      <p>All rights reserved &copy; 2021 Moiz</p>
+      <ul>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+      <p>Contact Us: +91 1234567890</p>
+      <p>Email: info@moiz.com</p>
+      <p>Address: 123 Main St, Anytown, USA</p>
+    </footer>
+  </body>
+</html>
